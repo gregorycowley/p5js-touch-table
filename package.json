@@ -7,21 +7,14 @@
     "start": "electron .",
     "test": "mocha ./js/**/*.test.js"
   },
-  "repository": "https://github.com/camerenisonfire/p5-electron-quick-start",
-  "keywords": [
-    "P5",
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "Cameren Dolecheck",
-  "license": "CC0-1.0",
+  "repository": "https://github.com/gregorycowley/p5js-touch-table",
+  "keywords": [],
+  "author": "Gregory Cowley",
+  "license": "MIT",
   "dependencies": {
-    "electron": "^9.4.0",
-    "electron-reload": "^1.5.0",
-    "mocha": "^6.2.0",
-    "p5": "^0.9.0"
+    "electron": "^27.0.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "mocha": "^10.2.0",
+    "p5": "^1.7.0"
   }
 }
