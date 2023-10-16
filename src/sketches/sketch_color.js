@@ -4,17 +4,13 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
-//Imports P5. Instantiates the sketch at the bottom of this file.
 const p5 = require('p5');
-//Imports our custom function to decide what color the fill shall be.
 const { getFillColor } = require('./js/src/colorController');
 
-//Starting out sketch and
-//injecting p5, as the param p, into our sketch function.
 const sketch = (p) => {
-
+  // p is a parameter that contains the p5 object.
+  
   p.setup = () => {
-    // Create the canvas
     p.createCanvas(p.windowWidth, p.windowHeight);
   };
 
@@ -30,5 +26,5 @@ const sketch = (p) => {
   }
 }
 
-//Instantiates P5 sketch to keep it out of the global scope.
+// Instantiates P5 sketch as an object to keep it out of the global scope.
 const app = new p5(sketch);
